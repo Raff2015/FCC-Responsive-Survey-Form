@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FCC Responsive Survey Form</title>
+
+  <link rel="icon" href="./imgs/question.png">
+
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- Here goes the Create Issue-->
+
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header bg-light">
+
+              <p id="description">
+                <h1 class="display-4" id="title">Student Satisfaction Survey:</h1>
+              </p>
+            </div>
+
+            <form id="survey-form" class="needs-validation" novalidate>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-4" id="name">
+                    <label for="firstName" id="name-label">Full Name</label>
+                    <input type="text" name="fullname" class="form-control" placeholder="Please Enter Full Name">
+                  </div>
+
+
+                  <div class="col-md-4" id="email">
+                    <label id="email-label">Email <span class="text-muted"></span></label>
+                    <input type="email" name="email" class="form-control" placeholder="you@email.com" required>
+                    <div class="invalid-feedback">
+                      Please enter a valid email address.
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="form-group" id="dropdown">
+                      <label for="multi-select">Major:</label>
+                      <select id="multi-select" name="dropdown" class="form-control">
+                        <option value="a">Applied Mathematics</option>
+                        <option value="b">Applied Physics</option>
+                        <option value="c">Architecture</option>
+                        <option value="d">Biology</option>
+                        <option value="e">Business</option>
+                        <option value="f">Business & Information Systems</option>
+                        <option value="g">Information Technology</option>
+                        <option value="h">Computer Science</option>
+                        <option value="i">Cybersecurity and Privacy</option>
+                        <option value="j">Construction Management Technology </option>
+                        <option value="k">Forensic Science</option>
+                        <option value="l">Healthcare Systems Management</option>
+                        <option value="m">Software Engineering</option>
+                        <option value="n">Web & Information Systems</option>
+                        <option value="o">Transportation</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+                  <div class="col-sm-4 col-md-4 col-xs-12">
+                    <div class="form-group" id="number">
+                      <label id="number-label">Age</label>
+                      <input type="number" min="1" max="99" id="number" name="number" class="form-control" placeholder="Please Enter Age."
+                        required>
+                      <div class="invalid-feedback">
+                        Please Enter Valid Age.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="form-group" id="survey-form">
+                      <br>
+                      <label for="multi-select">Student Enrollment Status:</label>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="radio-buttons"  class="custom-control-input">
+                        <label class="custom-control-label" for="radio-buttons">Full-Time</label>
+                      </div>
+
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="radio-buttons2"  class="custom-control-input">
+                        <label class="custom-control-label" for=radio-buttons2">Part-Time</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="form-group" id="survey-form">
+                      <br>
+                      <label for="multi-select">UnderGraduate Student Class Standing:</label>
+                      <select id="multi-select" name="list" class="form-control" multiple="">
+                        <option value="v">Freshman</option>
+                        <option value="w">Sophomore</option>
+                        <option value="x">Junior</option>
+                        <option value="y">Senior</option>
+
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="form-group" id="survey-form">
+                      <br>
+                      <label for="multi-select">Type of Transportation
+                        (Check all that apply): </label>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" name="checkbox" class="custom-control-input" id="defaultUnchecked" value="check-uno">
+                        <label class="custom-control-label" for="defaultUnchecked">Car</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" name="checkbox2" class="custom-control-input" id="defaultUnchecked2" value="check-dos">
+                        <label class="custom-control-label" for="defaultUnchecked2">Bus</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" name="checkbox3" class="custom-control-input" id="defaultUnchecked3" value="check-tres">
+                        <label class="custom-control-label" for="defaultUnchecked3">Bicycle</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" name="checkbox4" class="custom-control-input" id="defaultUnchecked4" value="check-cuatro">
+                        <label class="custom-control-label" for="defaultUnchecked4">Walk</label>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-8">
+                    <div class="form-group" id="survey-form">
+                      <br>
+                      <label for="textarea" id="number">Any Feedback, Comments or Suggestions?</label>
+                      <textarea id="textarea" name="txtarea" class="form-control" rows="6" placeholder="Enter your feedback here ...."></textarea>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+              <div class="card-footer bg-light text-right">
+                <center> <button type="submit" id="submit" value="submit" class="btn btn-primary">Submit</button> </center>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2018-2019</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://github.com/Raff2015">Github</a></li>
+          <li class="list-inline-item"><a href="https://web.njit.edu/~erc7/portfolio/">Portfolio</a></li>
+          <li class="list-inline-item"><a href="mailto:erc7@njit.edu">Hire me :)</a></li>
+          
+        </ul>
+      </footer>
+    </div>
+
+
+    <script src="js/validation.js"></script>
+</body>
+</html>
