@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FCC Responsive Survey Form</title>
 
@@ -11,7 +12,6 @@
 
 
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 
 </head>
 
@@ -27,7 +27,7 @@
             <div class="card-header bg-light">
 
               <p id="description">
-                <h1 class="display-4" id="title">Student Satisfaction Survey:</h1>
+                <h1 class="display-4" id="title">Student Satisfaction Survey</h1>
               </p>
             </div>
 
@@ -60,7 +60,7 @@
                         <option value="f">Business & Information Systems</option>
                         <option value="g">Information Technology</option>
                         <option value="h">Computer Science</option>
-                        <option value="i">Cybersecurity and Privacy</option>
+                        <option value="i">CyberSecurity and Privacy</option>
                         <option value="j">Construction Management Technology </option>
                         <option value="k">Forensic Science</option>
                         <option value="l">Healthcare Systems Management</option>
@@ -71,18 +71,11 @@
                     </div>
                   </div>
 
-
-
-
-
-
-
-
                   <div class="col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group" id="number">
                       <label id="number-label">Age</label>
-                      <input type="number" min="1" max="99" id="number" name="number" class="form-control" placeholder="Please Enter Age."
-                        required>
+                      <input type="number" min="1" max="99" id="number" name="number" class="form-control"
+                        placeholder="Please Enter Age." required>
                       <div class="invalid-feedback">
                         Please Enter Valid Age.
                       </div>
@@ -93,17 +86,16 @@
                     <div class="form-group" id="survey-form">
                       <br>
                       <label for="multi-select">Student Enrollment Status:</label>
-                      <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio1" name="radio-buttons"  class="custom-control-input">
-                        <label class="custom-control-label" for="radio-buttons">Full-Time</label>
+                      <div class="custom-control custom-radio custom-control-form-inline">
+                        <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx">
+                        <label class="custom-control-label" for="customRadio">Full-Time</label>
                       </div>
-
-                      <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio2" name="radio-buttons2"  class="custom-control-input">
-                        <label class="custom-control-label" for=radio-buttons2">Part-Time</label>
-                      </div>
+                      <div class="custom-control custom-radio custom-control-form-inline">
+                        <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
+                        <label class="custom-control-label" for="customRadio2">Part-Time</label>
+                      </div> 
                     </div>
-                  </div>
+                  </div>  
 
                   <div class="col-md-4">
                     <div class="form-group" id="survey-form">
@@ -125,20 +117,24 @@
                       <label for="multi-select">Type of Transportation
                         (Check all that apply): </label>
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="checkbox" class="custom-control-input" id="defaultUnchecked" value="check-uno">
+                        <input type="checkbox" name="checkbox" class="custom-control-input" id="defaultUnchecked"
+                          value="check-uno">
                         <label class="custom-control-label" for="defaultUnchecked">Car</label>
                       </div>
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="checkbox2" class="custom-control-input" id="defaultUnchecked2" value="check-dos">
+                        <input type="checkbox" name="checkbox2" class="custom-control-input" id="defaultUnchecked2"
+                          value="check-dos">
                         <label class="custom-control-label" for="defaultUnchecked2">Bus</label>
                       </div>
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="checkbox3" class="custom-control-input" id="defaultUnchecked3" value="check-tres">
+                        <input type="checkbox" name="checkbox3" class="custom-control-input" id="defaultUnchecked3"
+                          value="check-tres">
                         <label class="custom-control-label" for="defaultUnchecked3">Bicycle</label>
                       </div>
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="checkbox4" class="custom-control-input" id="defaultUnchecked4" value="check-cuatro">
+                        <input type="checkbox" name="checkbox4" class="custom-control-input" id="defaultUnchecked4"
+                          value="check-cuatro">
                         <label class="custom-control-label" for="defaultUnchecked4">Walk</label>
                       </div>
                     </div>
@@ -149,7 +145,8 @@
                     <div class="form-group" id="survey-form">
                       <br>
                       <label for="textarea" id="number">Any Feedback, Comments or Suggestions?</label>
-                      <textarea id="textarea" name="txtarea" class="form-control" rows="6" placeholder="Enter your feedback here ...."></textarea>
+                      <textarea id="textarea" name="txtarea" class="form-control" rows="6"
+                        placeholder="Enter your feedback here ...."></textarea>
                     </div>
                   </div>
 
@@ -158,7 +155,8 @@
                 </div>
               </div>
               <div class="card-footer bg-light text-right">
-                <center> <button type="submit" id="submit" value="submit" class="btn btn-primary">Submit</button> </center>
+                <center> <button type="submit" id="submit" value="submit" class="btn btn-primary">Submit</button>
+                </center>
               </div>
             </form>
           </div>
@@ -168,25 +166,18 @@
 
 
       <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1"> 
-
+        <p class="mb-1">&copy; 2018-2019</p>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="https://github.com/Raff2015">Github</a></li>
           <li class="list-inline-item"><a href="https://web.njit.edu/~erc7/portfolio/">Portfolio</a></li>
           <li class="list-inline-item"><a href="mailto:erc7@njit.edu">Hire me :)</a></li>
-          
+
         </ul>
       </footer>
     </div>
 
-<!--Footer-->
-<footer>
-      <div style="text-align: center">
-          Edgar Chicas <script>document.write(new Date().getFullYear())</script> © 
-      </div>
-</footer>
-<br>
-<!--Fin Footer--></p>
+
     <script src="js/validation.js"></script>
 </body>
+
 </html>
